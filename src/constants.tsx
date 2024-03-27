@@ -6,9 +6,7 @@ export const COLOR_WHITE_MAIN = '#F6F6F6';
 export const COLOR_GRAY_MAIN = '#5C5955';
 export const COLOR_BLACK_MAIN = '#000000';
 
-export const COCKTAILS = 'cocktails';
-
-
+export const PEOPLE = 'people';
 
 export const LAPTOP_X = '1920px';
 export const LAPTOP_LX = '1536px';

@@ -18,7 +18,7 @@ const fetcher = async (url: string, method = 'GET', data = {}) => {
 
     if (res.status >= HttpStatus.INTERNAL_SERVER_ERROR) {
       const error = new Error('An error occurred while fetching the data.');
-      // @ts-ignore
+      // @ts-expect-error
       error.status = res.status;
       throw error;
     }

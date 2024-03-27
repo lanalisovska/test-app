@@ -1,14 +1,15 @@
-import { COLOR_BLACK_MAIN, LAPTOP_L, LAPTOP_LX, LAPTOP_M, TABLET_L } from '@/constants';
+import { COLOR_BLACK_MAIN, LAPTOP_L, LAPTOP_LX, LAPTOP_M, TABLET_L } from './../../constants';
 import styled from 'styled-components';
 
-type Custom = {
+interface Custom {
   pathname?: string;
-};
+}
 const HOME_PATH = '/';
 
 export const LayoutWrapperLogic = styled.div<Custom>`
   width: 100%;
   height: 100%;
+  background-color: red;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
