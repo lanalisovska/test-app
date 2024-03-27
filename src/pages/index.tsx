@@ -1,11 +1,10 @@
+import React, { useState } from 'react';
 import styles from '@/styles/page.module.css';
 import { getPeopleList } from './api/getPeopleList';
-import { useState } from 'react';
 
 const Home = ({ data }: any) => {
+  // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
   const [state, setState] = useState(data);
-  const a = '';
-
   return (
     <main className={styles.main}>
       <div

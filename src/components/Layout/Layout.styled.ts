@@ -4,7 +4,6 @@ import styled from 'styled-components';
 interface Custom {
   pathname?: string;
 }
-const HOME_PATH = '/';
 
 export const LayoutWrapperLogic = styled.div<Custom>`
   width: 100%;

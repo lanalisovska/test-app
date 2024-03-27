@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import { ContentWrapper, LayoutWrapper, LayoutWrapperLogic } from './Layout.styled';
@@ -7,8 +7,7 @@ interface LayoutProps {
   children: ReactNode;
   pathname: string;
 }
-const Layout = ({ children, pathname }: LayoutProps) => {
-  const a = '';
+const Layout = ({ children }: LayoutProps) => {
   return (
     <LayoutWrapperLogic>
       <LayoutWrapper>

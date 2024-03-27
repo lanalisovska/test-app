@@ -1,6 +1,6 @@
 const nextConfig = {
   compiler: {
-    styledComponents: true
+    styledComponents: true,
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -10,7 +10,7 @@ const nextConfig = {
   images: {
     // domains: [process.env.IMAGES_URL || ''],
   },
-  distDir: 'build'
-}
+  distDir: 'build',
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
