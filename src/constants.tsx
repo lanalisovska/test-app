@@ -8,6 +8,8 @@ export const COLOR_BLACK_MAIN = '#000000';
 
 export const PEOPLE = 'people';
 
+export const BASE_URL = 'https://sw-api.starnavi.io';
+
 export const LAPTOP_X = '1920px';
 export const LAPTOP_LX = '1536px';
 export const LAPTOP_L = '1440px';
