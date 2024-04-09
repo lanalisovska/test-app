@@ -1,35 +1,3 @@
-<<<<<<< Updated upstream
-import React, { useState } from 'react';
-import styles from '@/styles/page.module.css';
-import { getPeopleList } from './api/getPeopleList';
-
-const Home = ({ data }: any) => {
-  // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
-  const [state, setState] = useState(data);
-  return (
-    <main className={styles.main}>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'centee',
-          overflowX: 'scroll',
-          gap: '10px',
-        }}
-      >
-        <div> Home</div>
-
-        {state?.results?.map((person: any) => (
-          <div
-            style={{ width: '300px', height: '400px', border: '1px solid white', padding: '20px' }}
-            key={person.id}
-          >
-            {person.name}
-          </div>
-        ))}
-      </div>
-    </main>
-=======
 import React, { useEffect, useState, useRef } from 'react';
 import { getFilmsList, getPeopleList, getStarshipsList } from './api/apiRequests';
 import { PersonsList, MainPageWrapper } from '@/styles/MainPage.styled';
@@ -66,22 +34,15 @@ const Home = ({ people, films, starships }: MainPageIterface) => {
         ))}
       </PersonsList>
     </MainPageWrapper>
->>>>>>> Stashed changes
   );
 };
 
 export async function getStaticProps() {
-<<<<<<< Updated upstream
-  const data = await getPeopleList();
-  return {
-    props: { data },
-=======
   const people = await getPeopleList();
   const films = await getFilmsList();
   const starships = await getStarshipsList();
   return {
     props: { people, films, starships },
->>>>>>> Stashed changes
   };
 }
 export default Home;
