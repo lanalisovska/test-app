@@ -1,5 +1,5 @@
-import fetcher from '@/pages/api/fetcher';
-import { BASE_URL, PEOPLE } from '@/constants';
+import fetcher from './fetcher';
+import { BASE_URL, PEOPLE } from '../../constants';
 
 export const getPeopleList = async () => {
   try {

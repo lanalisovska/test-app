@@ -9,8 +9,16 @@
     "moduleResolution": "bundler",
     "baseUrl": "src",
     "paths": {
-      "@/*": ["*"]
+      "@/*": [
+        "./*"
+      ],
+      "@/components/*": ["components/*"]
     },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "target": "es5",
     "lib": [
       "dom",
@@ -27,11 +35,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
   },
   "include": [
     "next.config.js",
@@ -47,7 +50,7 @@
     "jest.config.js",
     "src/interfaces.js",
     "jest.setup.js"
-  ],
+, "components", "helpers", "interfaces", "pages", "styles"  ],
   "exclude": [
     "node_modules"
   ]

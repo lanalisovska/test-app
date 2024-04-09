@@ -1,4 +1,4 @@
-import { HttpStatus } from '@/interfaces/http-status.enum';
+import { HttpStatus } from '../../interfaces/http-status.enum';
 
 const fetcher = async (url: string, method = 'GET', data = {}) => {
   let res;

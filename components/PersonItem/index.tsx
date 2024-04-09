@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@chakra-ui/react';
 import ReactFlow, { Background, Controls, type Edge, type Node } from 'reactflow';
-import { CustomBox, PersonItemStyle, InfoPerson } from '@/styles/MainPage.styled';
-import { filterUniqueEdges, filterUniqueNodes, getNodePosition } from '@/helpers';
-import { type Film, type PersonItemIterface } from '@/interfaces';
-import { SHIP } from '@/constants';
+import { CustomBox, PersonItemStyle, InfoPerson } from '../../styles/MainPage.styled';
+import { filterUniqueEdges, filterUniqueNodes, getNodePosition } from '../../helpers';
+import { type Film, type PersonItemIterface } from '../../interfaces';
+import { SHIP } from '../../constants';
 
 const PersonItem = ({ person, films, starships }: PersonItemIterface) => {
   const [initialNodes, setInitialNodes] = useState<Node[]>([]);

@@ -1,6 +1,6 @@
-import fetcher from '@/pages/api/fetcher';
-import { BASE_URL, PEOPLE, FILMS, STARSHIPS } from '@/constants';
-import { type Starship } from '@/interfaces';
+import fetcher from './fetcher';
+import { BASE_URL, PEOPLE, FILMS, STARSHIPS } from '../../constants';
+import { type Starship } from '../../interfaces';
 
 export const getPeopleList = async () => {
   try {

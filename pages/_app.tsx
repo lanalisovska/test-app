@@ -2,7 +2,7 @@ import React from 'react';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { Box, ChakraProvider, theme } from '@chakra-ui/react';
-import '@/styles/globals.css';
+import './../styles/globals.css';
 import Layout from '../components/Layout';
 
 function App({ Component, pageProps }: AppProps) {

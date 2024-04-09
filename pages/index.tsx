@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { getFilmsList, getPeopleList, getStarshipsList } from './api/apiRequests';
-import { PersonsList } from '@/styles/MainPage.styled';
-import PersonItem from '@/components/PersonItem';
+import { PersonsList } from '../styles/MainPage.styled';
+import PersonItem from '../components/PersonItem';
 import 'reactflow/dist/style.css';
-import { Person, type MainPageIterface } from '@/interfaces';
+import { Person, type MainPageIterface } from '../interfaces';
 
 const Home = ({ people, films, starships }: MainPageIterface) => {
   const [peopleList, setPeopleList] = useState(people?.results);
