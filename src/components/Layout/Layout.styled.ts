@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 import { COLOR_BLACK_MAIN, LAPTOP_L, LAPTOP_LX, LAPTOP_M, TABLET_L } from './../../constants';
+=======
+>>>>>>> Stashed changes
 import styled from 'styled-components';
 
 interface Custom {
@@ -24,6 +27,7 @@ export const LayoutWrapper = styled.div`
   margin: 0 auto;
   display: grid;
   align-items: center;
+<<<<<<< Updated upstream
   gap: 0;
   grid-template-columns: 1330px;
   grid-template-rows: 190px 1fr 120px;
@@ -52,10 +56,19 @@ export const LayoutWrapper = styled.div`
     align-items: center;
     background: rgba(0, 0, 0, 0.9);
     justify-content: center;
+=======
+  flex-direction: column;
+  justify-content: start;
+  color: white;
+  height: 100%;
+  > div {
+    width: 100%;
+>>>>>>> Stashed changes
   }
 `;
 
 export const ContentWrapper = styled.div`
+<<<<<<< Updated upstream
   background-color: ${COLOR_BLACK_MAIN};
   padding: 80px 0;
   height: 100%;
@@ -68,4 +81,8 @@ export const ContentWrapper = styled.div`
   @media screen and (max-width: ${TABLET_L}) {
     padding: 0;
   }
+=======
+  padding: 10px 0;
+  width: 1500px;
+>>>>>>> Stashed changes
 `;
