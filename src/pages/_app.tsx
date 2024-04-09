@@ -1,15 +1,20 @@
 import React from 'react';
-import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+import { Box, ChakraProvider, theme } from '@chakra-ui/react';
+import '@/styles/globals.css';
 import Layout from '../components/Layout';
 
 function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   return (
-    <Layout pathname={pathname}>
-      <Component {...pageProps} />
-    </Layout>
+    <ChakraProvider theme={theme}>
+      <Box bgImage="url(/wallpaper.jpg)" height={'100vh'} alignContent={'start'}>
+        <Layout pathname={pathname}>
+          <Component {...pageProps} />
+        </Layout>
+      </Box>
+    </ChakraProvider>
   );
 }
 
