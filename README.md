@@ -20,6 +20,16 @@ pnpm dev
 # or
 bun dev
 ```
+## Testing 
+```bash
+npm run test
+# or
+npm run testWatchAll
+```
+## Lint-staged
+```bash
+npm run lint
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
