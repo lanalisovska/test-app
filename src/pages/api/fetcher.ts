@@ -23,7 +23,6 @@ const fetcher = async (url: string, method = 'GET', data = {}) => {
       throw error;
     }
     const text = await res?.text();
-    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
     if (!text) {
       return { statusCode: res.status };
     }
