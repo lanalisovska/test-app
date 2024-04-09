@@ -12,7 +12,7 @@ export const PersonsList = styled.div`
   justify-self: start;
   flex: 1;
   width: auto;
-  height: 100%;
+  height: 100vh;
   gap: 10px;
   overflow-x: auto;
 `;
