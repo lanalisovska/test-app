@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { getFilmsList, getPeopleList, getStarshipsList } from './api/apiRequests';
-import { PersonsList, MainPageWrapper } from '@/styles/MainPage.styled';
+import { PersonsList } from '@/styles/MainPage.styled';
 import PersonItem from '@/components/PersonItem';
 import 'reactflow/dist/style.css';
 import { Person, type MainPageIterface } from '@/interfaces';
@@ -27,13 +27,13 @@ const Home = ({ people, films, starships }: MainPageIterface) => {
     }
   };
   return (
-    <MainPageWrapper>
+    <div>
       <PersonsList ref={wrapperRef} onScroll={handleScroll}>
         {peopleList?.map((person: Person) => (
           <PersonItem key={person.id} person={person} films={films.results} starships={starships} />
         ))}
       </PersonsList>
-    </MainPageWrapper>
+    </div>
   );
 };
 

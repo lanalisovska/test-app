@@ -9,7 +9,12 @@ function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   return (
     <ChakraProvider theme={theme}>
-      <Box bgImage="url(/wallpaper.jpg)" height={'100vh'} alignContent={'start'}>
+      <Box
+        bgImage="url(/wallpaper.jpg)"
+        height={'100vh'}
+        alignContent={'start'}
+        justifyContent={'start'}
+      >
         <Layout pathname={pathname}>
           <Component {...pageProps} />
         </Layout>

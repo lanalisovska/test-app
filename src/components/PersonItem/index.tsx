@@ -100,7 +100,7 @@ const PersonItem = ({ person, films, starships }: PersonItemIterface) => {
     setShowFlow(!showFlow);
   };
   return (
-    <PersonItemStyle showflow={showFlow ? 'show' : 'hidden'}>
+    <PersonItemStyle showflow={showFlow ? 'show' : ''}>
       <span>Click the button to see more info</span>
       <InfoPerson>
         <Button onClick={handleClick}>{person.name}</Button>
