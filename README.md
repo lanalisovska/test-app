@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Hello! Before starting the code review, I will say a few words about this task.
   In addition to the established requirements, I added a workflow to Github that controls the merge process and does not give the merge code if the build has not passed.
   Unfortunately, due to the fact that the deadlines are already critical, I did not have time to cover the application with tests.
+  Exept this, I configured husky and lint-staged to prevent commits without passing tests and linting
 
  Thank you!
 
