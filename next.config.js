@@ -4,12 +4,6 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    // appDir: true,
-  },
-  images: {
-    // domains: [process.env.IMAGES_URL || ''],
-  },
   distDir: 'build',
 };
 

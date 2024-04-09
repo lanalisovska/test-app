@@ -1,7 +1,6 @@
 import React, { type ReactNode } from 'react';
 import Header from '../Header';
-import Footer from '../Footer';
-import { ContentWrapper, LayoutWrapper, LayoutWrapperLogic } from './Layout.styled';
+import { ContentWrapper, LayoutWrapper } from './Layout.styled';
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,13 +8,10 @@ interface LayoutProps {
 }
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <LayoutWrapperLogic>
-      <LayoutWrapper>
-        <Header />
-        <ContentWrapper>{children}</ContentWrapper>
-        <Footer />
-      </LayoutWrapper>
-    </LayoutWrapperLogic>
+    <LayoutWrapper>
+      <Header />
+      <ContentWrapper>{children}</ContentWrapper>
+    </LayoutWrapper>
   );
 };
 export default Layout;
